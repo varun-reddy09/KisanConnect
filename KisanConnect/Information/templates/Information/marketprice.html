@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+
+    <head>
+
+    <!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    -->
+
+         <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="Bootstrap, Landing page, Template, Registration, Landing">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Grayrids">
+    <title>KISAAN CONNECT</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/HomeCss/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/HomeCss/line-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/HomeCss/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'css/HomeCss/owl.theme.css' %}">
+    <link rel="stylesheet" href="{% static 'css/HomeCss/nivo-lightbox.css' %}">
+    <link rel="stylesheet" href="{% static 'css/HomeCss/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css/HomeCss/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/HomeCss/color-switcher.css' %}">
+    <link rel="stylesheet" href="{% static 'css/HomeCss/menu_sideslide.css' %}">
+    <link rel="stylesheet" href="{% static 'css/HomeCss/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/HomeCss/responsive.css' %}">
+
+    </head>
+
+    <body>
+
+     <section id="services" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Market Price</h2>
+          <span>Kisaan Connect</span>
+            <p class="section-subtitle"><strong>{{ org }}</strong></p>
+        </div>
+
+          <h1 style="text-align:center">{{ title }}</h1>
+          <br>
+          <br>
+
+          <h2>Source : {{ source }}</h2>
+          <br>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="item-boxes services-item wow fadeInDown" data-wow-delay="0.2s">
+              <div class="icon color-1">
+              <!--  <i class="lni-pencil"></i> -->
+                  <img src="{% static 'img/P3.jpg' %}">
+              </div>
+              <div class="icon color-2">
+              <h4>{{ records.0.commodity }}</h4>
+              </div>
+              <p>
+                  <pre>
+                 <h6>
+
+Arrival_Date: {{records.0.arrival_date}}
+
+Min_Price: {{records.0.min_price}}
+
+Max_Price: {{records.0.max_price}}
+
+Modal_Price: {{records.0.modal_price}}
+
+Time_Stamp: {{records.0.timestamp}}
+
+State: {{records.0.state}}
+
+District: {{records.0.district}}
+
+Market: {{records.0.market}}
+
+       </h6>
+            </pre>
+              </p>
+            </div>
+          </div>
+
+
+
+
+
+
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="item-boxes services-item wow fadeInDown" data-wow-delay="0.4s">
+              <div class="icon color-2">
+               <img src="{% static 'img/P2.jpg' %}">
+              </div>
+              <div class="icon color-2">
+              <h4>{{ records.1.commodity }}</h4>
+                  </div>
+              <p>
+                  <pre>
+                 <h6>
+
+Arrival_Date: {{records.1.arrival_date}}
+
+Min_Price: {{records.1.min_price}}
+
+Max_Price: {{records.1.max_price}}
+
+Modal_Price: {{records.1.modal_price}}
+
+Time_Stamp: {{records.1.timestamp}}
+
+State: {{records.1.state}}
+
+District: {{records.1.district}}
+
+Market: {{records.1.market}}
+
+       </h6>
+            </pre>
+              </p>
+            </div>
+
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="item-boxes services-item wow fadeInDown" data-wow-delay="0.6s">
+              <div class="icon color-3">
+               <img src="{% static 'img/P4.jpg' %}">
+              </div>
+              <div class="icon color-2">
+              <h4>{{ records.2.commodity }}</h4>
+              </div>
+              <p>
+                  <pre>
+                 <h6>
+
+Arrival_Date: {{records.2.arrival_date}}
+
+Min_Price: {{records.2.min_price}}
+
+Max_Price: {{records.2.max_price}}
+
+Modal_Price: {{records.2.modal_price}}
+
+Time_Stamp: {{records.2.timestamp}}
+
+State: {{records.2.state}}
+
+District: {{records.2.district}}
+
+Market: {{records.2.market}}
+
+       </h6>
+            </pre>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="item-boxes services-item wow fadeInDown" data-wow-delay="0.8s">
+              <div class="icon color-4">
+               <img src="{% static 'img/P5.jpg' %}">
+              </div>
+              <div class="icon color-2">
+              <h4>{{ records.3.commodity }}</h4>
+              </div>
+              <p>
+                  <pre>
+                 <h6>
+
+Arrival_Date: {{records.3.arrival_date}}
+
+Min_Price: {{records.3.min_price}}
+
+Max_Price: {{records.3.max_price}}
+
+Modal_Price: {{records.3.modal_price}}
+
+Time_Stamp: {{records.3.timestamp}}
+
+State: {{records.3.state}}
+
+District: {{records.3.district}}
+
+Market: {{records.3.market}}
+
+       </h6>
+            </pre>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="item-boxes services-item wow fadeInDown" data-wow-delay="1s">
+              <div class="icon color-5">
+               <img src="{% static 'img/P6.jpg' %}">
+              </div>
+              <div class="icon color-2">
+              <h4>{{ records.4.commodity }}</h4>
+              </div>
+              <p>
+                  <pre>
+                 <h6>
+
+Arrival_Date: {{records.4.arrival_date}}
+
+Min_Price: {{records.4.min_price}}
+
+Max_Price: {{records.4.max_price}}
+
+Modal_Price: {{records.4.modal_price}}
+
+Time_Stamp: {{records.4.timestamp}}
+
+State: {{records.4.state}}
+
+District: {{records.4.district}}
+
+Market: {{records.4.market}}
+
+       </h6>
+            </pre>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="item-boxes services-item wow fadeInDown" data-wow-delay="1.2s">
+              <div class="icon color-6">
+                <img src="{% static 'img/P7.jpg' %}">
+              </div>
+              <div class="icon color-2">
+              <h4>{{ records.5.commodity }}</h4>
+              </div>
+              <p>
+                  <pre>
+                 <h6>
+
+Arrival_Date: {{records.5.arrival_date}}
+
+Min_Price: {{records.5.min_price}}
+
+Max_Price: {{records.5.max_price}}
+
+Modal_Price: {{records.5.modal_price}}
+
+Time_Stamp: {{records.5.timestamp}}
+
+State: {{records.5.state}}
+
+District: {{records.5.district}}
+
+Market: {{records.5.market}}
+
+       </h6>
+            </pre>
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+         <div class="row">
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="item-boxes services-item wow fadeInDown" data-wow-delay="0.2s">
+              <div class="icon color-1">
+              <!--  <i class="lni-pencil"></i> -->
+                  <img src="{% static 'img/P3.jpg' %}">
+              </div>
+              <div class="icon color-2">
+              <h4>{{ records.6.commodity }}</h4>
+              </div>
+              <p>
+                  <pre>
+                 <h6>
+
+Arrival_Date: {{records.6.arrival_date}}
+
+Min_Price: {{records.6.min_price}}
+
+Max_Price: {{records.6.max_price}}
+
+Modal_Price: {{records.6.modal_price}}
+
+Time_Stamp: {{records.6.timestamp}}
+
+State: {{records.6.state}}
+
+District: {{records.6.district}}
+
+Market: {{records.6.market}}
+
+       </h6>
+            </pre>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="item-boxes services-item wow fadeInDown" data-wow-delay="0.4s">
+              <div class="icon color-2">
+               <img src="{% static 'img/P2.jpg' %}">
+              </div>
+              <div class="icon color-2">
+              <h4>{{ records.7.commodity }}</h4>
+              </div>
+              <p>
+                  <pre>
+                 <h6>
+
+Arrival_Date: {{records.7.arrival_date}}
+
+Min_Price: {{records.7.min_price}}
+
+Max_Price: {{records.7.max_price}}
+
+Modal_Price: {{records.7.modal_price}}
+
+Time_Stamp: {{records.7.timestamp}}
+
+State: {{records.7.state}}
+
+District: {{records.7.district}}
+
+Market: {{records.7.market}}
+
+       </h6>
+            </pre>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="item-boxes services-item wow fadeInDown" data-wow-delay="0.6s">
+              <div class="icon color-3">
+               <img src="{% static 'img/P4.jpg' %}">
+              </div>
+              <div class="icon color-2">
+              <h4>{{ records.8.commodity }}</h4>
+              </div>
+              <p>
+                  <pre>
+                 <h6>
+
+Arrival_Date: {{records.8.arrival_date}}
+
+Min_Price: {{records.8.min_price}}
+
+Max_Price: {{records.8.max_price}}
+
+Modal_Price: {{records.8.modal_price}}
+
+Time_Stamp: {{records.8.timestamp}}
+
+State: {{records.8.state}}
+
+District: {{records.8.district}}
+
+Market: {{records.8.market}}
+
+       </h6>
+            </pre>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="item-boxes services-item wow fadeInDown" data-wow-delay="0.8s">
+              <div class="icon color-4">
+               <img src="{% static 'img/P5.jpg' %}">
+              </div>
+              <div class="icon color-2">
+              <h4>{{ records.9.commodity }}</h4>
+              </div>
+              <p>
+                  <pre>
+                 <h6>
+
+Arrival_Date: {{records.9.arrival_date}}
+
+Min_Price: {{records.9.min_price}}
+
+Max_Price: {{records.9.max_price}}
+
+Modal_Price: {{records.9.modal_price}}
+
+Time_Stamp: {{records.9.timestamp}}
+
+State: {{records.9.state}}
+
+District: {{records.9.district}}
+
+Market: {{records.9.market}}
+
+       </h6>
+            </pre>
+              </p>
+            </div>
+          </div>
+          <!--<div class="col-lg-4 col-md-6 col-xs-12">-->
+            <!--<div class="item-boxes services-item wow fadeInDown" data-wow-delay="1s">-->
+              <!--<div class="icon color-5">-->
+               <!--<img src="{% static 'img/P6.jpg' %}">-->
+              <!--</div>-->
+              <!--<h4>CARROT</h4>-->
+              <!--<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</p>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div class="col-lg-4 col-md-6 col-xs-12">-->
+            <!--<div class="item-boxes services-item wow fadeInDown" data-wow-delay="1.2s">-->
+              <!--<div class="icon color-6">-->
+                <!--<img src="{% static 'img/P7.jpg' %}">-->
+              <!--</div>-->
+              <!--<h4>MANGO</h4>-->
+              <!--<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</p>-->
+            <!--</div>-->
+          <!--</div>-->
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </section>
+
+
+
+    </body>
+
+
+
+</html>

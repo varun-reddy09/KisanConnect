@@ -1,0 +1,35 @@
+body{
+    
+    background-color:black;   
+    
+}
+
+#first{
+    
+   /* background-image:url("img/slider/S4.jpg");
+    background-size: cover;*/
+    background-color: orange;
+    margin-top: 20px;
+    
+    
+}
+
+#second{
+    
+   /* background-image:url("img/slider/S4.jpg");
+    background-size: cover; */
+    background-color: white;
+    
+    
+    
+    
+}
+
+#third{
+/*
+    background-image:url("img/slider/S4.jpg");
+    background-size: cover;
+*/
+    background-color: green;
+    
+}
